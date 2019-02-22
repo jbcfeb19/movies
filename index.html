@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<h1>It works</h1>
+
+<h2>JavaScript Input and Output</h2>
+
+<p>Go to the <a href="/registration">registration page</a></p>
+
+<p id="output"></p>
+<script>
+    var name = prompt("Please enter your name", "<name goes here>");
+
+    if (name!= null) {
+        document.getElementById("output").innerHTML =
+            "Hello " + name + "! How are you today?";
+
+    }
+</script>
+
+
+</body>
+</html>
